@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Dieser CSS-Code wird jedes HTML-Element mit der Klasse "header" entsprechend der definierten Eigenschaften gestalten.  */
+
+nav {
+  height: max-content;
+  background-image: url('../img/header\ 2.jpg');
+  background-size: cover;
+  color: white;
+}
+
+
+.navbar-brand {
+  margin-right: auto;
+  /* Pushes the logo to the left */
+}
+
+.navbar-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+ /* Custom CSS for the wrapper */
+ .wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Custom CSS for the content */
+.content {
+  padding: 20px;
+  flex: 1;
+}
+
+/* Custom CSS for the footer */
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+}
+
+
+
+
+.indicator {
+  margin-left: 10px;
+}
+
+
+/* Change the background color of all table headers  */
+table th {
+  background-color: #2caa43;/
+}
+
+.sortable-header {
+  cursor: pointer;
+}
+
+.sort-icon {
+  display: none;
+}
+
+.sort-icon.active {
+  display: inline-block;
+}
+
+#addRecordForm {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+
+
+
+

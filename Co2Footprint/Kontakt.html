@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CO²-Footprint</title>
+  <!-- Dieser spezielle Link verweist auf eine CSS-Datei von Bootstrap, einer beliebten Bibliothek für das Frontend-Webdesign -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Dieser spezielle Link verweist auf eine CSS-Datei von Font Awesome, einer Bibliothek, die eine Vielzahl von Symbolen und Icons bereitstellt, die in Webprojekten verwendet werden können -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Dies bedeutet, dass die Datei "style.css" im Unterverzeichnis "css" relativ zum aktuellen Verzeichnis des HTML-Dokuments liegt. -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-4" >
+      <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="Logo" style="height: 50px;"></a>
+      <h1 class="navbar-title">CO²-Footprint</h1>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto ">
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="file:///Users/mehdizahraei/dev/Co2Footprint/index.html">Startseite</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="file:///Users/mehdizahraei/dev/Co2Footprint/co2.html">Co2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="file:///Users/mehdizahraei/dev/Co2Footprint/impressum.html">Impressum</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white"  href="file:///Users/mehdizahraei/dev/Co2Footprint/Kontakt.html">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+
+
+  <!-- Container -->
+  <!-- Dieser Code erstellt ein Kontaktformular mit Feldern für Name, E-Mail und Nachricht sowie einem Senden-Button.
+  die Funktion validateForm() implementieren musst,um das Formular zu validieren, bevor es abgesendet wird.
+   Die Validierungsfunktion sollte true zurückgeben, wenn das Formular gültig ist, andernfalls false. -->
+   <div class="wrapper">
+
+   <div class="content">
+    <div class="container">
+      <br>
+      <div class="container">
+        <h2>Kontaktformular</h2>
+        <form id="contactForm" onsubmit="return validateForm()">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" name="name">
+          </div>
+          <div class="form-group">
+            <label for="email">E-Mail:</label>
+            <input type="email" class="form-control" id="email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="message">Nachricht:</label>
+            <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-success">Senden</button>
+          <div id="error" class="text-danger"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+    
+<!-- Dieser HTML-Code definiert das Markup für einen Footer-Bereich einer Website. -->
+  <footer class="footer bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 column">
+          <h4>CO²-Footprint </h4>
+          <img src="./img/logo.png" alt="Logo" style="width: 80px;">
+        </div>
+        <div class="col-md-4 column">
+          <h4>Wichtige Link</h4>
+          <p><a href="file:///Users/mehdizahraei/dev/Co2Footprint/impressum.html"
+              class="link-body-emphasis link-offset-2 text-white ">Impressum</a></p>
+          <p>Datenschutzerklärung</p>
+        </div>
+        <div class="col-md-4 column">
+          <ul class="list-unstyled">
+            <li><i class="fas fa-map-marker-alt text-success"></i> <a class="text-decoration-none text-white"
+              href="https://maps.app.goo.gl/Mx9ArfZWtUBxuNQ97">xxx 7, 49377 Vechta</a></li>
+              <li><i class="fas fa-phone-alt text-success"></i> <span href="#">0178 255 45</span></li>
+            <li><i class="fa-solid fa-envelope text-success"></i> <span href="#">co2@website.de</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="./js/script.js"></script>
+</body>
+
+</html>
